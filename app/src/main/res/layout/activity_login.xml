@@ -19,12 +19,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/getStartedText"
         android:layout_width="196dp"
         android:layout_height="30dp"
         android:layout_marginTop="16dp"
-        android:text="Welcome back"
+        android:text="@string/welcome_back"
         android:textColor="@android:color/black"
         android:textSize="26sp"
         app:layout_constraintBottom_toBottomOf="@id/topImage"
@@ -34,12 +34,12 @@
         app:layout_constraintTop_toTopOf="@id/topImage"
         app:layout_constraintVertical_bias="0.592" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/subtitleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
-        android:text="sign in to access your account"
+        android:text="@string/sign_in_to_access_your_account"
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -53,13 +53,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="valid email"
+        android:hint="@string/valid_email"
         app:boxBackgroundMode="outline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topImage">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,14 +77,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="password"
+        android:hint="@string/password"
         app:boxBackgroundMode="outline"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilEmail">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,13 +96,13 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/termsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingEnd="20dp"
-        android:text="forgot password"
-        android:textColor="#6C63FF"
+        android:text="@string/forgot_password"
+        android:textColor="@color/purple"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/termsCheckbox"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,19 +115,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="18dp"
-        android:text="remember me"
+        android:text="@string/remember_me"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilPassword" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#6C63FF"
+        android:backgroundTint="@color/purple"
         app:cornerRadius="10dp"
         android:text="Next"
         android:textSize="22sp"
@@ -146,21 +146,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nextButton">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/alreadyMemberText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="new member"
+            android:text="@string/new_member"
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="register now"
-            android:textColor="#6C63FF"
+            android:text="@string/register_now"
+            android:textColor="@color/purple"
             android:textSize="14sp"
             android:textStyle="bold"
             android:clickable="true"

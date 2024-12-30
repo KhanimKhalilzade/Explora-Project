@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6C63FF"
+    android:background="@color/purple"
     tools:context=".SplashActivity">
 
     <ImageView
@@ -18,11 +18,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Explora"
+        android:text="@string/explora"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/imageView"

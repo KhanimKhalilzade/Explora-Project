@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="explore_the_world_easily">Explore the world easily</string>
+    <string name="to_your_desire">to your desire</string>
+    <string name="explora">Explora</string>
+    <string name="by_checking_the_box_you_agree_to_our">By checking the box you agree to our</string>
+    <string name="terms_and_conditions">Terms and Conditions.</string>
+    <string name="next"><![CDATA[Next >]]></string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="log_in">Log In</string>
+    <string name="get_started">Get Started</string>
+    <string name="by_creating_a_free_account">by creating a free account.</string>
+    <string name="full_name">Full name</string>
+    <string name="valid_email">Valid email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="strong_password">Strong Password</string>
+    <string name="sign_in_to_access_your_account">sign in to access your account</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="password">password</string>
+    <string name="remember_me">remember me</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="new_member">new member</string>
+    <string name="register_now">register now</string>
 </resources>

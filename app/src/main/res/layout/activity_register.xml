@@ -22,7 +22,7 @@
         android:layout_width="215dp"
         android:layout_height="44dp"
         android:layout_marginTop="16dp"
-        android:text="Get Started"
+        android:text="@string/get_started"
         android:textColor="@android:color/black"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@id/topImage"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:text="by creating a free account."
+        android:text="@string/by_creating_a_free_account"
         android:textColor="@android:color/darker_gray"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,13 +50,13 @@
         android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Full name"
+        android:hint="@string/full_name"
         app:boxBackgroundMode="outline"
         app:layout_constraintTop_toBottomOf="@id/subtitleText"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fullNameInput"
             android:drawableEnd="@drawable/user"
             android:layout_width="match_parent"
@@ -70,12 +70,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:hint="Valid email"
+        android:hint="@string/valid_email"
         app:boxBackgroundMode="outline"
         app:layout_constraintEnd_toEndOf="@+id/tilfullname"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilfullname">
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,12 +91,12 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Phone number"
+        android:hint="@string/phone_number"
         app:boxBackgroundMode="outline"
         app:layout_constraintTop_toBottomOf="@id/tilEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -112,12 +112,12 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Strong Password"
+        android:hint="@string/strong_password"
         app:boxBackgroundMode="outline"
         app:layout_constraintTop_toBottomOf="@id/tilPhone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-        <EditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -132,8 +132,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="17dp"
-        android:text="Terms and Conditions."
-        android:textColor="#6C63FF"
+        android:text="@string/terms_and_conditions"
+        android:textColor="@color/purple"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@id/termsCheckbox"
         app:layout_constraintTop_toTopOf="@id/termsCheckbox" />
@@ -143,19 +143,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:text="By checking the box you agree to our"
+        android:text="@string/by_checking_the_box_you_agree_to_our"
         android:textSize="9sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilPassword" />
-    <androidx.appcompat.widget.AppCompatButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="#6C63FF"
-        android:text="Next >"
+        android:backgroundTint="@color/purple"
+        android:text="@string/next"
         android:textSize="18dp"
         android:textAllCaps="false"
         app:cornerRadius="10dp"
@@ -171,20 +171,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nextButton">
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/alreadyMemberText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already a member?"
+            android:text="@string/already_a_member"
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold" />
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" Log In"
-            android:textColor="#6C63FF"
+            android:text="@string/log_in"
+            android:textColor="@color/purple"
             android:textSize="14sp"
             android:textStyle="bold"
             android:clickable="true"
