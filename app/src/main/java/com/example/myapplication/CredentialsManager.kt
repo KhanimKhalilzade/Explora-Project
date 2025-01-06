@@ -22,27 +22,30 @@ class CredentialsManager(context: Context) {
     }
 
     fun isValidPassword(password: String): Boolean {
-        return password.isNotEmpty()
+        return password.length >= 8 &&
+                password.any { it.isDigit() } &&
+                password.any { it.isLetter() } &&
+                password.any { !it.isLetterOrDigit() }
     }
 
     fun register(email: String, password: String): String {
         val normalizedEmail = email.trim().lowercase()
 
         if (credentialsMap.containsKey(normalizedEmail)) {
-            return "This email is already registered."
+            return "Email already exists."
         }
 
         if (!isValidEmail(normalizedEmail)) {
-            return "Enter a valid email address."
+            return "Please enter a valid email address."
         }
 
         if (!isValidPassword(password)) {
-            return "Password field cannot be blank."
+            return "Password must be at least 8 characters, include letters, numbers, and special characters."
         }
 
         credentialsMap[normalizedEmail] = password
         sharedPreferences.edit().putString(normalizedEmail, password).apply()
 
-        return "You have successfully registered."
+        return "Registration successful."
     }
 }
