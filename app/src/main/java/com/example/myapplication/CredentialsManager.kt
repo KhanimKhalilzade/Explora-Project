@@ -6,7 +6,8 @@ import android.util.Patterns
 
 class CredentialsManager(context: Context) {
 
-    private val sharedPreferences: SharedPreferences = context.getSharedPreferences("UserCredentials", Context.MODE_PRIVATE)
+    private val sharedPreferences: SharedPreferences =
+        context.getSharedPreferences("UserCredentials", Context.MODE_PRIVATE)
     private val credentialsMap: MutableMap<String, String> = mutableMapOf()
 
     init {

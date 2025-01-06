@@ -1,4 +1,5 @@
 package com.example.myapplication
+
 class CredentialsManagerTest {
 
     private lateinit var credentialsManager: CredentialsManager
@@ -12,6 +13,7 @@ class CredentialsManagerTest {
             println("testEmptyEmail failed: Email should be invalid if it's empty")
         }
     }
+
     fun testWrongFormatEmail() {
         val email = "invalid-email"
         if (!credentialsManager.isValidEmail(email)) {
@@ -20,6 +22,7 @@ class CredentialsManagerTest {
             println("testWrongFormatEmail failed: Email should be invalid if it doesn't have the correct format")
         }
     }
+
     fun testValidEmail() {
         val email = "test@example.com"
         if (credentialsManager.isValidEmail(email)) {

@@ -5,18 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".RegisterActivity">
+
     <ImageView
         android:id="@+id/topImage"
         android:layout_width="320dp"
         android:layout_height="230dp"
-        android:layout_marginTop="25dp"
         android:layout_marginLeft="62dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/welcome_back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.728"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/getStartedText"
         android:layout_width="215dp"
@@ -31,6 +34,7 @@
         app:layout_constraintStart_toStartOf="@id/topImage"
         app:layout_constraintTop_toTopOf="@id/topImage"
         app:layout_constraintVertical_bias="0.594" />
+
     <TextView
         android:id="@+id/subtitleText"
         android:layout_width="wrap_content"
@@ -43,27 +47,29 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/getStartedText" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilfullname"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/full_name"
         app:boxBackgroundMode="outline"
-        app:layout_constraintTop_toBottomOf="@id/subtitleText"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/subtitleText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/fullNameInput"
-            android:drawableEnd="@drawable/user"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittext"
+            android:drawableEnd="@drawable/user"
             android:padding="16dp" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilEmail"
         android:layout_width="0dp"
@@ -75,57 +81,63 @@
         app:layout_constraintEnd_toEndOf="@+id/tilfullname"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilfullname">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableEnd="@drawable/mail"
             android:background="@drawable/rounded_edittext"
+            android:drawableEnd="@drawable/mail"
             android:inputType="textEmailAddress"
             android:padding="16dp" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPhone"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/phone_number"
         app:boxBackgroundMode="outline"
-        app:layout_constraintTop_toBottomOf="@id/tilEmail"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/tilEmail">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:inputType="phone"
+            android:background="@drawable/rounded_edittext"
             android:drawableEnd="@drawable/smartphone"
-            android:background="@drawable/rounded_edittext" />
+            android:inputType="phone"
+            android:padding="16dp" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tilPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/strong_password"
         app:boxBackgroundMode="outline"
-        app:layout_constraintTop_toBottomOf="@id/tilPhone"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/tilPhone">
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
+            android:background="@drawable/rounded_edittext"
             android:drawableEnd="@drawable/lock"
             android:inputType="textPassword"
-            android:background="@drawable/rounded_edittext" />
+            android:padding="16dp" />
     </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/termsText"
         android:layout_width="wrap_content"
@@ -137,6 +149,7 @@
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@id/termsCheckbox"
         app:layout_constraintTop_toTopOf="@id/termsCheckbox" />
+
     <CheckBox
         android:id="@+id/termsCheckbox"
         android:layout_width="wrap_content"
@@ -147,6 +160,7 @@
         android:textSize="9sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilPassword" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/nextButton"
         android:layout_width="0dp"
@@ -156,13 +170,14 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/purple"
         android:text="@string/next"
-        android:textSize="18dp"
         android:textAllCaps="false"
-        app:cornerRadius="10dp"
         android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/termsCheckbox" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -171,6 +186,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nextButton">
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/alreadyMemberText"
             android:layout_width="wrap_content"
@@ -179,15 +195,16 @@
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/loginText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
             android:text="@string/log_in"
             android:textColor="@color/purple"
             android:textSize="14sp"
-            android:textStyle="bold"
-            android:clickable="true"
-            android:focusable="true" />
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
